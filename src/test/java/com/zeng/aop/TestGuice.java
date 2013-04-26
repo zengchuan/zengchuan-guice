@@ -9,6 +9,7 @@ public class TestGuice {
 
     @Test
     public void test() {
+        //add injector
         Injector injector = Guice.createInjector(new Module());
         OtherServiceA otherServiceA = injector.getInstance(OtherServiceA.class);
         try{
